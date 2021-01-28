@@ -8,11 +8,9 @@
 
 # ปัญหา 
 
-ถ้าเรามีคลาสลูกที่เพิ่มขึ้นมา และแต่ละคลาสก็มี  Eat เมทตอทที่ไม่เหมือนกันละ ?  
+ถ้าเรามีคลาสลูกที่เพิ่มขึ้นมา และแต่ละคลาสก็มี  Eat เมทตอทที่ไม่เหมือนกันละ ? 
 
 แล้วหากในคลาสลูกบางคลาสเช่น Mountain Duck กับ Wild Duck มี Eat เมธตอทที่เหมือนกันละ แต่การสืบทอด คลาสลูกไม่สามารถสืบทอดหรือส่งต่อ  Eat ให้กันได้ จำทำยังไงให้เราไม่ต้องเขียน เมธตอท Eat ทั้งในคลาส Mountain Duck กับ Wild Duck?   
-
- 
 
 *บางคนอาจจะคิดว่าเราก็สร้างคลาส abstruct เช่น  WildDuckEatBehavior ขึ้นมาเเล้วก็ให้ Mountain Duck กับ Wild Duck สิบทอดมาก็จบ แต่หากว่าคลาาที่มีเมธตอทที่เหมือนกันไมีมีแต่สองคลาสนี้ละ สุดท้ายก็ลงเอยที่ต้องเพิ่ม abstruct เยอะขึ้นมาเลยๆตยยุ่งไปหมด 
 
@@ -24,7 +22,8 @@
 
 `Define a family of algorithms encapsulate each one and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. `
 
-ออกแบบมาให้แก้ปัญหาเวลาที่คลาสลูกมีเมธตอทที่เหมือนกันแต่ไม่สามารถนำไปใช้ได้  
+ตัวอย่างคลาส Mountain Duck กับ Wild Duck มีเมธตอทเหมือนกัน เราจะสร้าง interface ชื่อว่า IEatBehavior เเล้วมี Eat() ประกาศไว้ เเล้วก็จะมี Concret คลาสที่ Implement มธตอทเกี่ยวกับกินของเป็ดเช่น
+EatVegetable กับ EatMeat อาจจะเพิ่มว่ากินอย่างอื่นได้ตามที่ต้องการ
 
  
 
