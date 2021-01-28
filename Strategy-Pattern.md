@@ -1,12 +1,12 @@
 หากใครที่เขียนโปรแกรมมาสักพักและรู้ว่าเราสามารถเขียนให้มันทำงานได้ตามที่เราต้องการ แต่พอมาดูเรื่องการเทสและการรักษาโค๊ตยังไงให้สะอาดที่สุด การเรียนรู้เรื่อง pattern ต่างๆสามารถช่วยให้เราเขียนโค๊ตได้เป็นระเบียบมากขึ้น และยังทำให้โค๊ตเราสะอาด  
 
-ยกตัวอย่างเรามีคลาสชื่อว่า Duck ซึ่งเป็น Base คลาสสำหรับคลาสลูกๆ นั้นก็คือคลาว Wild Duck กับ  CityDuck ซึ่งแน่นอนว่าเป็ดยังไงมันก็เป็นเป็ด และมีพฤติกรรมที่เหมือนกันคือ Eat ดังนั้นใน Base คลาส และคลาสลูกก็สามารถที่จะนำเอาเมธตอทนี้ไปใช้ได้ เเล้วหาก Wild Duck มันกินไม่เหมือน City Duck ละ 
+ยกตัวอย่างเรามีคลาสชื่อว่า `Duck` ซึ่งเป็น `Base` คลาสสำหรับคลาสลูกๆ นั้นก็คือคลาว `Wild Duck` กับ `CityDuck` ซึ่งแน่นอนว่าเป็ดยังไงมันก็เป็นเป็ด และมีพฤติกรรมที่เหมือนกันคือ Eat ดังนั้นใน Base คลาส และคลาสลูกก็สามารถที่จะนำเอาเมธตอทนี้ไปใช้ได้ เเล้วหาก Wild Duck มันกินไม่เหมือน City Duck ละ 
 
 ง่ายๆ เราก็ override สิแบบเป็ดป่าจะกินอะไรก็ไป implement ในคลาสตัวเองเลย 
 
  
 
-#ปัญหา 
+# ปัญหา 
 
 ถ้าเรามีคลาสลูกที่เพิ่มขึ้นมา และแต่ละคลาสก็มี  Eat เมทตอทที่ไม่เหมือนกันละ ?  
 
@@ -18,11 +18,11 @@
 
  
 
-#Strategy Pattern 
+# Strategy Pattern 
 
 ก่อนอื่นมาดูความหมายของคนคิด pattern เค้าว่ายังไง 
 
-Define a family of algorithms encapsulate each one and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. 
+`Define a family of algorithms encapsulate each one and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. `
 
 ออกแบบมาให้แก้ปัญหาเวลาที่คลาสลูกมีเมธตอทที่เหมือนกันแต่ไม่สามารถนำไปใช้ได้  
 
