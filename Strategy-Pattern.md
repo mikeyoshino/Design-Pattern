@@ -28,7 +28,7 @@ EatVegetable กับ EatMeat อาจจะเพิ่มว่ากิน�
 
 ![image info](./Images/better-error.jpg)
 
- 
+![image info](./Images/BlogImage/January/DynamicDualMode.png)
 
  
 
