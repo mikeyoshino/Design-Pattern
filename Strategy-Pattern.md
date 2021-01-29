@@ -25,6 +25,9 @@
 ตัวอย่างคลาส Mountain Duck กับ Wild Duck มีเมธตอทเหมือนกัน เราจะสร้าง interface ชื่อว่า IEatBehavior เเล้วมี Eat() ประกาศไว้ เเล้วก็จะมี Concret คลาสที่ Implement มธตอทเกี่ยวกับกินของเป็ดเช่น
 EatVegetable กับ EatMeat อาจจะเพิ่มว่ากินอย่างอื่นได้ตามที่ต้องการ
 
+
+![image info](./images/better-error.jpg)
+
  
 
  
