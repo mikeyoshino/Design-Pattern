@@ -26,7 +26,7 @@
 EatVegetable กับ EatMeat อาจจะเพิ่มว่ากินอย่างอื่นได้ตามที่ต้องการ
 
 
-![image info](./images/better-error.jpg)
+![image info](../images/better-error.jpg)
 
  
 
